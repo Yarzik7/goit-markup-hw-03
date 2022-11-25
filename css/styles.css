@@ -25,8 +25,27 @@ body {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+
   outline: 1px solid brown;
 }
+
+.container.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.container .link {
+  display: inline-block;
+}
+
+h3 {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+p { margin: 0; }
 
 /* Logo */
 
@@ -37,6 +56,10 @@ body {
   line-height: 1.2;
   text-decoration: none;
   color: var(--accent-color);
+}
+
+.logo.link {
+  margin-bottom: 28px;
 }
 
 .header-logo { color: var(--header-logo-color); }
@@ -84,12 +107,19 @@ body {
 .footer-contacts .link:hover,
 .footer-contacts .link:focus { color: var(--accent-color); }
 
+.container.container-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+
 /* List */
 
-.list { 
-  list-style: none;
+.list {
   margin: 0;
   padding: 0;
+
+  list-style: none;
 }
 
 /* Buttons */
@@ -132,13 +162,15 @@ body {
 /* Hero */
 
 .hero {
-  width: 1600px;
-  margin: 0 auto;
+  /* width: 1600px;
+  margin: 0 auto; */
   background-color: var(--bg-footer-color); 
 }
 
 .hero-title {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 30px;
+  
   font-weight: 900;
   font-size: 44px;
   line-height: 1.37;
@@ -151,6 +183,8 @@ body {
 /* Section */
 
 .section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -162,6 +196,8 @@ body {
 /* Features */
 
 .features-title {
+  /* margin-bottom: 10px; */
+
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
@@ -171,6 +207,12 @@ body {
 .features-text {
   font-size: 14px;
   line-height: 1.71;
+}
+
+/* Profile */
+
+.container.container-profile {
+  padding-top: 0;
 }
 
 /* Team */
