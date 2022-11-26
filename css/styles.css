@@ -50,8 +50,6 @@ body {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  /* padding-top: 94px;
-  padding-bottom: 94px; */
 
   outline: 1px solid brown;
 }
@@ -139,8 +137,6 @@ p {
 
 .site-nav .link {
   display: block;
-  /* padding-top: 32px;
-  padding-bottom: 32px; */
 }
 
 .site-nav .link:hover,
@@ -242,6 +238,8 @@ p {
 /* Hero */
 
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
   text-align: center;
 
   background-color: var(--bg-footer-color);
@@ -282,9 +280,15 @@ p {
 
 /* Features */
 
-.features-title {
-  /* margin-bottom: 10px; */
+.features {
+  display: flex;
+}
 
+.features .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.features-title {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
@@ -301,11 +305,27 @@ p {
 .profile-section {
   padding-top: 0;
 }
+
+.profile {
+  display: flex;
+}
+
+.profile .item:not(:last-child) {
+  margin-right: 30px;
+}
 /* .container.container-profile {
   padding-top: 0;
 } */
 
 /* Team */
+
+.team {
+  display: flex;
+}
+
+.team .item:not(:last-child) {
+  margin-right: 30px;
+}
 
 .name {
   font-weight: 500;
@@ -334,4 +354,29 @@ p {
   font-size: 16px;
   line-height: 1.88;
   color: var(--primary-text-color);
+}
+
+.filter {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+.filter .item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.projects .item:not(:nth-child(3n)) {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.projects .item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
 }
