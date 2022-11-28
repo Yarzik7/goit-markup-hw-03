@@ -95,7 +95,7 @@ p {
   color: var(--accent-color);
 }
 
-.logo.link {
+.footer .logo {
   margin-bottom: 28px;
 }
 
@@ -193,7 +193,7 @@ p {
 
 .footer-contacts .link {
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 1.14;
   font-style: normal;
   text-decoration: none;
   color: var(--footer-contacts-color);
